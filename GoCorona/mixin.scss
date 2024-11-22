@@ -1,0 +1,30 @@
+@mixin title {
+   font-size: clamp(20px, 0.821rem + 2.14vw, 44px);
+   font-weight: 700;
+   line-height: 126%;
+   color: $black;
+   font-family: 'Raleway', sans-serif;
+}
+
+@mixin text {
+   font-size: clamp(12px, 0.554rem + 0.36vw, 14px);
+   font-weight: 400;
+   line-height: 138.5%;
+   color: $black;
+   font-family: 'Rubik', sans-serif;
+}
+
+@mixin link($hover, $active) {
+   &:hover {
+      color: $hover;
+   }
+
+   &:active {
+      color: $active;
+   }
+}
+
+$pink: #EC5863;
+$blue: #4285F4;
+$black: #000000;
+$fs: 12px;
